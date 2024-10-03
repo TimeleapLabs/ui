@@ -6,7 +6,8 @@
 </script>
 
 <div
-	class="grid"
+	{...$$restProps}
+	class="{$$props.class || ''} grid"
 	style="--extra-large-cols: {extraLargeScreenColumns}; --large-cols: {largeScreenColumns}; --medium-cols: {mediumScreenColumns}; --small-cols: {smallScreenColumns}"
 >
 	<slot></slot>

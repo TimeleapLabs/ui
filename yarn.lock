@@ -198,6 +198,25 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.3.0.tgz"
   integrity sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==
 
+"@iconify/icons-carbon@^1.2.20":
+  version "1.2.20"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-carbon/-/icons-carbon-1.2.20.tgz#05a612ab29c6bdc3585517d54ce63f99526a5d5a"
+  integrity sha512-GaBRDebrshFfiRu11ktyBvm/Ez72UXvZUsHG3WPqddokTp3auOT4cLch+2JSEzeVXSGbopzU2Fhpv8vE2I0XCw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/svelte@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@iconify/svelte/-/svelte-4.0.2.tgz#c506db52d9b83f18878f47aae42cf5e470b0f146"
+  integrity sha512-6BSrU85FzGfhQD3bTXpnkCCvBAglEt8T9QednVnXAYm4C+d3464y+pYMzhQNJm5mPId2cuiw+2wXlDflXllHDw==
+  dependencies:
+    "@iconify/types" "^2.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz"

@@ -1,13 +1,14 @@
 <script lang="ts">
 	export let href: string | undefined = undefined;
+	export let animate = false;
 </script>
 
 {#if href}
-	<a {...$$restProps} class="{$$props.class || ''} button" {href} on:click>
+	<a {...$$restProps} class="{$$props.class || ''} button" class:animate {href} on:click>
 		<slot></slot>
 	</a>
 {:else}
-	<button {...$$restProps} class="{$$props.class || ''} button" on:click>
+	<button {...$$restProps} class="{$$props.class || ''} button" class:animate on:click>
 		<slot></slot>
 	</button>
 {/if}
@@ -23,17 +24,16 @@
 		justify-content: center;
 		border: none;
 		cursor: pointer;
+		display: inline-flex;
+		gap: 0.5em;
+		transition: background-color 0.2s;
 	}
 
-	.button:hover {
-		opacity: 0.9;
+	.button.animate:hover {
+		gap: 1em;
 	}
 
-	.button :global(svg) {
-		margin-right: 0.5em;
-	}
-
-	.button :global(img) {
-		vertical-align: middle;
+	.animate {
+		transition: all 0.2s;
 	}
 </style>

@@ -1,4 +1,6 @@
 <script>
+	import Icon from '@iconify/svelte';
+
 	import Container from '$lib/layout/Container.svelte';
 	import Grid from '$lib/layout/Grid.svelte';
 
@@ -13,21 +15,27 @@
 <Container>
 	<Navbar class="bg-gray-800 text-white">
 		<Button class="bg-cyan-600">Home</Button>
-		<Button class="hover:bg-slate-700">About</Button>
-		<Button class="hover:bg-slate-700">Contact</Button>
+		<Button class="hover:bg-slate-700">
+			<Icon icon="carbon:carbon" /> Products
+		</Button>
+		<Button class="hover:bg-slate-700">
+			<Icon icon="carbon:email" /> Contact
+		</Button>
 	</Navbar>
 	<Grid extraLargeScreenColumns={2} largeScreenColumns={2}>
-		<Card class="text-white flex flex-col bg-indigo-950 text-light font-light">
+		<Card class="text-white flex flex-col bg-cyan-950 text-light font-light">
 			<h1 style="flex: 1; font-size: 4em; font-weight: 300">
 				Distributed and Decentralized Computation Solutions.
 			</h1>
 			<div class="button">
-				<Button class="bg-green-600">Learn More</Button>
+				<Button class="bg-green-600 hover:bg-green-500" animate>
+					Learn More<Icon icon="carbon:arrow-right" />
+				</Button>
 			</div>
 		</Card>
 		<Image src="/images/robot.jpg" alt="Distributed Computation" height="640px" />
 	</Grid>
-	<h2 class="white-text font-light text-white" style="font-size: 3em">Discover</h2>
+	<h2 class="white-text font-light text-white" style="font-size: 3em">Discover.</h2>
 	<Grid extraLargeScreenColumns={3}>
 		<Card class="!p-0 flex bg-fuchsia-200">
 			<div class="p-8 font-light flex-1 content-center">
@@ -48,9 +56,9 @@
 			<Image src="/images/pattern3.svg" alt="Unchained" width="128px" height="128px"></Image>
 		</Card>
 	</Grid>
-	<Grid extraLargeScreenColumns={5} largeScreenColumns={5}>
+	<Grid extraLargeScreenColumns={5} largeScreenColumns={5} class="mt-8">
 		<Image src="/images/rolle.jpg" alt="Lake Geneva" height="640px" class="col-span-2" />
-		<Card class="text-white flex flex-col bg-indigo-950 text-light font-light col-span-3">
+		<Card class="text-white flex flex-col bg-sky-950 text-light font-light col-span-3">
 			<h2 style="font-size: 2em; font-weight: 400">Timeleap.Swiss</h2>
 			<p class="mt-8">
 				Founded in December 2021, Kenshi is a pioneering blockchain technology company headquartered
@@ -61,7 +69,9 @@
 				providing cutting-edge blockchain solutions for businesses and enterprises.
 			</p>
 			<div class="button">
-				<Button class="bg-green-600">Learn More</Button>
+				<Button class="bg-green-600 hover:bg-green-500" animate>
+					Learn More<Icon icon="carbon:arrow-right" />
+				</Button>
 			</div>
 		</Card>
 	</Grid>
