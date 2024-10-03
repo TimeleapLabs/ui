@@ -7,9 +7,9 @@
 		max-width: 1200px;
 		width: 100%;
 		margin: 0 auto;
-		padding: 2em;
+		padding: 4em 0;
 		display: flex;
 		flex-direction: column;
-		gap: 2em;
+		gap: 4em;
 	}
 </style>

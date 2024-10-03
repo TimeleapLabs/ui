@@ -5,7 +5,11 @@
 	export let height = '100%';
 </script>
 
-<div class="image" style="--height: {height}; --width: {width}">
+<div
+	{...$$restProps}
+	class="{$$props.class || ''} image"
+	style="--height: {height}; --width: {width}"
+>
 	<img {src} {alt} {...$$restProps} />
 </div>
 

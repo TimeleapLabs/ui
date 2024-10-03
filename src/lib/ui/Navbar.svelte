@@ -8,5 +8,6 @@
 		height: auto;
 		display: flex;
 		align-items: center;
+		gap: 1em;
 	}
 </style>
