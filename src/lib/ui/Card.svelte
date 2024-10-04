@@ -4,7 +4,7 @@
 
 <style>
 	.card {
-		border-radius: 2em;
+		border-radius: var(--border-radius);
 		padding: 2em;
 	}
 </style>

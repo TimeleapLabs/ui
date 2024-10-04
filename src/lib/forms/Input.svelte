@@ -10,7 +10,7 @@
 
 <style>
 	input {
-		border-radius: 2em;
+		border-radius: var(--border-radius);
 		padding: 0 2em;
 		height: 64px;
 		box-sizing: border-box;

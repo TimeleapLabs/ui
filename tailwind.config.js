@@ -5,7 +5,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['"Geist"'],
-				mono: ['"Geist Mono"']
+				mono: ['"Geist Mono"'],
+				serif: ['"Aleo"']
 			}
 		}
 	},

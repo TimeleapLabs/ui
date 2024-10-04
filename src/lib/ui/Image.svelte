@@ -15,7 +15,7 @@
 
 <style>
 	.image {
-		border-radius: 2em;
+		border-radius: var(--border-radius);
 		overflow: hidden;
 		width: var(--width);
 		height: var(--height);

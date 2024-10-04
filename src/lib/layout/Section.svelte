@@ -1,15 +1,14 @@
-<div class="container" {...$$restProps}>
+<div {...$$restProps} class="{$$props.class || ''} section">
 	<slot></slot>
 </div>
 
 <style>
-	.container {
-		max-width: 1200px;
+	.section {
 		width: 100%;
 		margin: 0 auto;
-		padding: 4em 0;
 		display: flex;
 		flex-direction: column;
 		gap: 4em;
+		box-sizing: border-box;
 	}
 </style>

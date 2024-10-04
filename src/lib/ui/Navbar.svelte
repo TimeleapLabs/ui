@@ -4,7 +4,7 @@
 
 <style>
 	.navbar {
-		border-radius: 2em;
+		border-radius: var(--border-radius);
 		height: auto;
 		display: flex;
 		align-items: center;
