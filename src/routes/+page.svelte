@@ -87,16 +87,16 @@
 		smallScreenColumns={1}
 		class="mt-8 !auto-rows-auto"
 	>
-		<Image src="/images/flare.jpg" alt="Mattherhorn" height="640px" />
+		<Image src="/images/bangkok.jpg" alt="Bangkok DevCon" height="640px" />
 		<Card class="text-white flex flex-col mt-4">
-			<h2 class="white-text text-white font-serif text-5xl">Flare Cards: NFC Identity Cards.</h2>
+			<h2 class="white-text text-white font-serif text-5xl">Devcon 2024: Bangkok, Thailand.</h2>
 			<p class="mt-12 text-lg font-light flex-1">
-				Flare Cards are NFC-enabled identity cards that allow users to securely access their
-				accounts and services, or share their contact information with a simple tap.
+				Join us at Devcon 2024 in Bangkok, Thailand, where we will be hosting a series of workshops
+				and talks on the future of blockchain technology.
 			</p>
 			<div class="button mt-24">
 				<Button class="bg-green-400 text-black hover:bg-green-300 font-normal" animate>
-					Coming Soon
+					Book a Ticket<Icon icon="carbon:arrow-right" />
 				</Button>
 			</div>
 		</Card>
@@ -114,7 +114,7 @@
 		<Card
 			class="text-white flex flex-col col-span-1 md:col-span-3 bg-gradient-to-tr from-zinc-950 to-zinc-900 border border-zinc-800"
 		>
-			<h2 class="white-text text-white font-serif text-5xl">
+			<h2 class="white-text text-white font-serif text-4xl md:text-5xl">
 				Headquartered in the heart of Switzerland.
 			</h2>
 			<p class="mt-12 text-lg font-light">
@@ -172,9 +172,9 @@
 		largeScreenColumns={4}
 		mediumScreenColumns={3}
 		smallScreenColumns={1}
-		class="text-white pt-4"
+		class="text-white pt-4 md:pb-16"
 	>
-		<div class="md:pb-48 pb-16">
+		<div class="md:pb-48">
 			<h3 class="font-serif text-xl pb-8">Timeleap SA.</h3>
 			<p class="text-gray-300">Pl. de l'Industrie 2, 1180 Rolle, Switzerland</p>
 			<img class="mt-8" src="/images/timeleap.svg" alt="Logo" width="160px" />

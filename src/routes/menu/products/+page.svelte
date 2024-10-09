@@ -26,8 +26,8 @@
 			<Icon icon="carbon:email" /> Contact
 		</Button>
 		<div class="flex-1"></div>
-		<Button class="bg-red-500 !px-6 hover:bg-red-400" on:click={() => window?.history?.go(-1)}>
-			<Icon icon="carbon:close" width={24} />
+		<Button class="bg-blue-500 !px-6 hover:bg-blue-400" on:click={() => window?.history?.go(-1)}>
+			<Icon icon="carbon:arrow-left" width={24} />
 		</Button>
 	</Navbar>
 
