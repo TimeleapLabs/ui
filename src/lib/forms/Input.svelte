@@ -1,11 +1,12 @@
 <script>
 	export let label;
 	export let id;
+	export let value = '';
 </script>
 
 <div class="input">
 	<label for={id}>{label} <slot></slot> </label>
-	<input {...$$restProps} {id} />
+	<input {...$$restProps} {id} bind:value />
 </div>
 
 <style>
