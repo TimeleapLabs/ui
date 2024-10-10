@@ -1,5 +1,6 @@
 // Reexport your entry components here
 export { default as Input } from './forms/Input.svelte';
+export { default as Switch } from './forms/Switch.svelte';
 export { default as Grid } from './layout/Grid.svelte';
 export { default as Section } from './layout/Section.svelte';
 export { default as Button } from './ui/Button.svelte';
