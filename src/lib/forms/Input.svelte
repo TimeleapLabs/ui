@@ -2,9 +2,10 @@
 	export let label;
 	export let id;
 	export let value = '';
+	export let containerClass = '';
 </script>
 
-<div class="input">
+<div class="input {containerClass}">
 	<label for={id}>{label} <slot></slot> </label>
 	<input {...$$restProps} {id} bind:value />
 </div>
