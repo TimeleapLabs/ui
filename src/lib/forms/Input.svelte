@@ -12,7 +12,7 @@
 
 <style>
 	input {
-		border-radius: var(--border-radius);
+		border-radius: var(--input-border-radius, var(--border-radius));
 		padding: 0 2em;
 		height: 64px;
 		box-sizing: border-box;

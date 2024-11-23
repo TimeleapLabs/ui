@@ -15,7 +15,7 @@
 
 <style>
 	.button {
-		border-radius: var(--border-radius);
+		border-radius: var(--button-border-radius, var(--border-radius));
 		padding: 2em;
 		height: 2em;
 		text-decoration: none;
