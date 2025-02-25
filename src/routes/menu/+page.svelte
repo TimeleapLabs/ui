@@ -37,7 +37,7 @@
 				<h3 class="font-serif text-2xl">Products</h3>
 				<div class="text-gray-800">Timeleap products</div>
 			</div>
-			<Image src="/images/pattern1.svg" alt="Unchained" width="128px" height="128px"></Image>
+			<Image src="/images/pattern1.svg" alt="Timeleap" width="128px" height="128px"></Image>
 		</Card>
 	</Grid>
 </Section>

@@ -16,7 +16,7 @@
 <style>
 	.button {
 		border-radius: var(--button-border-radius, var(--border-radius));
-		padding: 2em;
+		padding: 0.75em 1.25em;
 		height: 2em;
 		text-decoration: none;
 		display: inline-flex;
