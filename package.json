@@ -27,8 +27,6 @@
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
-		"@iconify/icons-carbon": "^1.2.20",
-		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-vercel": "^5.4.5",
 		"@sveltejs/kit": "^2.0.0",

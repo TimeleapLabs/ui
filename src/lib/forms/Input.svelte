@@ -13,7 +13,7 @@
 <style>
 	input {
 		border-radius: var(--input-border-radius, var(--border-radius));
-		padding: 1em 0.75em;
+		padding: 0.75em 1em;
 		box-sizing: border-box;
 		outline: none;
 	}
