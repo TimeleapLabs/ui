@@ -1,16 +1,28 @@
-<script>
-	export let extraLargeScreenColumns = 4;
-	export let largeScreenColumns = 3;
-	export let mediumScreenColumns = 2;
-	export let smallScreenColumns = 1;
+<script lang="ts">
+	interface Props {
+		extraLargeScreenColumns?: Number;
+		largeScreenColumns?: Number;
+		mediumScreenColumns?: Number;
+		smallScreenColumns?: Number;
+		children?: import('svelte').Snippet;
+		[key: string]: any;
+	}
+
+	let {
+		extraLargeScreenColumns = 4,
+		largeScreenColumns = 3,
+		mediumScreenColumns = 2,
+		smallScreenColumns = 1,
+		...props
+	}: Props = $props();
 </script>
 
 <div
-	{...$$restProps}
-	class="{$$props.class || ''} grid"
+	{...props}
+	class="{props.class || ''} grid"
 	style="--extra-large-cols: {extraLargeScreenColumns}; --large-cols: {largeScreenColumns}; --medium-cols: {mediumScreenColumns}; --small-cols: {smallScreenColumns}"
 >
-	<slot></slot>
+	{@render props.children?.()}
 </div>
 
 <style>

@@ -1,14 +1,20 @@
-<script>
-	export let href = '';
+<script lang="ts">
+	interface Props {
+		href?: string | undefined;
+		[key: string]: any;
+		children?: import('svelte').Snippet;
+	}
+
+	let { href = undefined, ...props }: Props = $props();
 </script>
 
 {#if href}
-	<a {href} {...$$restProps} class="{$$props.class || ''} card">
-		<slot></slot>
+	<a {href} {...props} class="{props.class || ''} card">
+		{@render props.children?.()}
 	</a>
 {:else}
-	<div {...$$restProps} class="{$$props.class || ''} card">
-		<slot></slot>
+	<div {...props} class="{props.class || ''} card">
+		{@render props.children?.()}
 	</div>
 {/if}
 

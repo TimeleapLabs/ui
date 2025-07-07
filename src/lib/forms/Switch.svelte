@@ -1,9 +1,21 @@
 <script lang="ts">
-	export let checked = false;
-	export let disabled = false;
-	export let color = '#2196f3';
-	export let label;
-	export let id;
+	interface Props {
+		checked?: boolean;
+		disabled?: boolean;
+		color?: string;
+		label: any;
+		id: any;
+		[key: string]: any
+	}
+
+	let {
+		checked = $bindable(false),
+		disabled = false,
+		color = '#2196f3',
+		label,
+		id,
+		...rest
+	}: Props = $props();
 
 	const isTailwindClass = (color: string) => color.startsWith('bg-') || color.startsWith('text-');
 	const getCssVariable = (color: string, name: string) =>
@@ -12,7 +24,7 @@
 
 <div class="field">
 	<label class="switch" for={id}>
-		<input type="checkbox" {...$$restProps} {id} bind:checked {disabled} />
+		<input type="checkbox" {...rest} {id} bind:checked {disabled} />
 		<span
 			class="slider {checked && isTailwindClass(color) ? `is-tailwind ${color}` : ''}"
 			style={getCssVariable(color, '--bg-color')}
