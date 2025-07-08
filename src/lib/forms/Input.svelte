@@ -1,13 +1,26 @@
-<script>
-	export let label;
-	export let id;
-	export let value = '';
-	export let containerClass = '';
+<script lang="ts">
+	interface Props {
+		label: any;
+		id: any;
+		value?: string;
+		containerClass?: string;
+		children?: import('svelte').Snippet;
+		[key: string]: any
+	}
+
+	let {
+		label,
+		id,
+		value = $bindable(''),
+		containerClass = '',
+		children,
+		...rest
+	}: Props = $props();
 </script>
 
 <div class="input {containerClass}">
-	<label for={id}>{label} <slot></slot> </label>
-	<input {...$$restProps} {id} bind:value />
+	<label for={id}>{label} {@render children?.()} </label>
+	<input {...rest} {id} bind:value />
 </div>
 
 <style>

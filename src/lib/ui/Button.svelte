@@ -1,15 +1,21 @@
 <script lang="ts">
-	export let href: string | undefined = undefined;
-	export let animate = false;
+	interface Props {
+		href?: string;
+		animate?: boolean;
+		children?: import('svelte').Snippet;
+		[key: string]: any;
+	}
+
+	let { href = undefined, animate = false, ...props }: Props = $props();
 </script>
 
 {#if href}
-	<a {...$$restProps} class="{$$props.class || ''} button" class:animate {href} on:click>
-		<slot></slot>
+	<a {...props} {href} class="{props.class || ''} button" class:animate>
+		{@render props.children?.()}
 	</a>
 {:else}
-	<button {...$$restProps} class="{$$props.class || ''} button" class:animate on:click>
-		<slot></slot>
+	<button {...props} class="{props.class || ''} button" class:animate>
+		{@render props.children?.()}
 	</button>
 {/if}
 

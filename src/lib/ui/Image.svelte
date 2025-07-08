@@ -1,16 +1,17 @@
-<script>
-	export let src;
-	export let alt;
-	export let width = '100%';
-	export let height = '100%';
+<script lang="ts">
+	interface Props {
+		src: string;
+		alt: string;
+		width?: string;
+		height?: string;
+		[key: string]: any;
+	}
+
+	let { src, alt, width = '100%', height = '100%', ...props }: Props = $props();
 </script>
 
-<div
-	{...$$restProps}
-	class="{$$props.class || ''} image"
-	style="--height: {height}; --width: {width}"
->
-	<img {src} {alt} {...$$restProps} />
+<div {...props} class="{props.class || ''} image" style="--height: {height}; --width: {width}">
+	<img {src} {alt} {...props} />
 </div>
 
 <style>
